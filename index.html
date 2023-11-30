@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!---кодировка страницы-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--респонсивная технология сайта, 
+        viewport - размер контента привязывается к размеру окна, 
+        width=device-width - используем ширину окна,
+        initial-scale=1.0 - запрещаем браузеру мастабировать элементы-->
+    <title>Document</title> <!-- Название документа, название вкладки-->
+    <!-- Скрипт иконочных шрифтов:-->
+    <script src="https://kit.fontawesome.com/3f27ae9b39.js" crossorigin="anonymous"></script> 
+    <!-- Шрифты гугл фонтс:-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- подключаем файл стилей -->
+</head>
+<body>
+ <header class="header">
+    <!-- Контейнер центровщик -->
+    <div class="container">
+        <!-- Тег nav - навигация: -->
+        <nav class="nav"> 
+            <a href="index.html class="header-link">Home</a>
+            <a href="about.html" class="header-link">About</a>
+            <a href="#" class="header-link">Services</a>
+            <a href="#" class="header-link">Blog</a>
+            <a href="#" class="header-link">Contact</a>
+        </nav>
+    </div>
+ </header>
+
+<main class="main">
+    <!-- Центральный контейнер: -->
+    <div class="container flex">
+        <!-- Левая часть контейнера -->
+        <div class="main-left">
+            <h3 class="subtitle">Next genaretion platform</h3>
+            <h1 class="title">Artificial intelligence & Syber security</h1>
+            <p class="dsc">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+            <a href="#" class="main-link">Get Started</a>
+            <!-- Вставляем иконку прям перед текстом. вставаить первое "fa" обязательно!!! -->
+            <a href="#" class="main-link"><i class="fa fa-solid fa-play"></i>Watch Video</a>
+        </div>
+        <div class="main-right">
+            <img src="images/1.png" alt="AI">
+        </div>
+    </div>
+</main>
+
+
+<section class="section">
+    <div class="container flex">
+        <img src="images/400.png" alt="logos">
+        <img src="images/401.png" alt="logos">
+        <img src="images/402.png" alt="logos">
+        <img src="images/403.png" alt="logos">
+    </div>
+</section>
+
+</body>
+</html>
