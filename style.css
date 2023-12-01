@@ -27,11 +27,11 @@ body {
     justify-content: center;
 }
 
-/* Ширина контейнера */
 .container  {
-    width: 1147px;
+    width: 1147px; /* Ширина контейнера */
     /* Слва справа отступ нулевой, от границ окна расчичтывается автоматически */
     margin: 0 auto;
+    margin-bottom: 250px;
 }
 
 .header {
@@ -115,8 +115,17 @@ body {
     line-height: 160%; /* 25.6px */
     opacity: 0.7;
     margin-bottom: 30;
-    /* margin-left: 30;
-    margin-right: 30; */
+}
+
+.dsc-4 {
+    color: var(--ffffff, #FFF);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 25.6px */
+    opacity: 0.7;
+    margin-bottom: 20px;
 }
 
 .main-link {
@@ -137,8 +146,7 @@ body {
 
 /* стрелка в кнопке*/
 .fa-play {
-    margin-right: 10px; /* правый отступ после стрелки*/
-    
+    margin-right: 10px; /* правый отступ после стрелки*/    
 }
 
 /* действие при наведении указателя*/
@@ -158,9 +166,9 @@ body {
     justify-content: space-between; /*распределить контент чтоб между ним была пустота*/
 }
 
-.main {
-    margin-bottom: 200px; /* нижний отступ */ 
-}
+/* .main {
+    margin-bottom: 250px; /* нижний отступ */ 
+} */
 
 .section {
     margin-bottom: 250px; /* нижний отступ */ 
@@ -197,16 +205,14 @@ body {
     box-sizing: border-box;
   }
 
-.subwrapper {    
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-}
-
 .box {
+    display: grid;    
+    grid-template-rows: auto auto auto ;  
+    padding: 30px;
     border-radius: 10px; /*скругление */
     background: #132035;     
-    text-align: center;
-    grid-template-rows: auto center auto;
+    text-align: center; /*горизонтальное  ценрование тестка*/
+    align-items: center; /* по центру по вертикали */
 }
 
 .box4 {    
@@ -214,11 +220,4 @@ body {
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 4;
-}
-
-.box-image {
-    margin-top: 30;
-    margin-bottom: 30;
-    margin-left: 30;
-    margin-right: 30;
 }
