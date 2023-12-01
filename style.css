@@ -38,17 +38,6 @@ body {
     margin-bottom: 160px;
 }
 
-.subtitle {
-    color: var(--3-a-68-b-8, #3A68B8);
-    font-family: Open Sans;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 160%; /* 28.8px */
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
 .title {
     color: var(--ffffff, #FFF);
     font-family: Open Sans;
@@ -59,6 +48,41 @@ body {
     margin-bottom: 40px;
 }
 
+.subtitle {
+    color: var(--ffffff, #FFF);
+    font-family: Open Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 52px */ 
+    margin-bottom: 30px;
+}
+
+.subsubtitle {
+    color: var(--3-a-68-b-8, #3A68B8);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 28.8px */
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.boxtitle {
+    color: var(--ffffff, #FFF);
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 31.25px */
+    opacity: 0.7;
+    margin-bottom: 30;
+    /* margin-left: 30;
+    margin-right: 30; */
+}
+
 .dsc {
     color: var(--ffffff, #FFF);
     font-family: Open Sans;
@@ -67,7 +91,32 @@ body {
     font-weight: 600;
     line-height: 160%; /* 28.8px */
     opacity: 0.7;
+    margin-bottom: 70px;
+}
+
+.dsc-2 {
+    color: var(--ffffff, #FFF);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 25.6px */
+    opacity: 0.7;
     margin-bottom: 50px;
+}
+
+.dsc-3 {
+    color: var(--ffffff, #FFF);
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 25.6px */
+    opacity: 0.7;
+    margin-bottom: 30;
+    /* margin-left: 30;
+    margin-right: 30; */
 }
 
 .main-link {
@@ -106,20 +155,70 @@ body {
 /* добавим модификатор с именем "flex" и опишем его свойства */
 .flex {
     display: flex;
-    justify-content: space-between; /*распределить контент чтоб между ним была пустота
+    justify-content: space-between; /*распределить контент чтоб между ним была пустота*/
+}
+
+.main {
+    margin-bottom: 200px; /* нижний отступ */ 
+}
+
+.section {
+    margin-bottom: 250px; /* нижний отступ */ 
 }
 
 /* перечисляем классы к разным селекторам */
-.main-left, .main-right {
+.main-left, .main-right, .main-1-left, .main-1-right {
     width: 47%;
 }
 
 .main-right {
-    display: flex;
-    justify-content: end; /* с конца */
+    display: flex; 
+    justify-content: right; /* с конца */
+    align-items: center; /* по центру по вертикали */
 }
 
+.main-left {
+    display: flex; 
+    justify-content: left; /* с конца */
+}
 
-.main {
-    margin-bottom: 200px; /* нижний отступ */ 
+.wight44 {
+    width: 44%;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 389px; /* высота */
+    grid-column-gap: 30px; /* Растояние м/у ячейками */
+    grid-row-gap: 30px; /* Растояние м/у ячейками */
+}
+* {
+    box-sizing: border-box;
+  }
+
+.subwrapper {    
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.box {
+    border-radius: 10px; /*скругление */
+    background: #132035;     
+    text-align: center;
+    grid-template-rows: auto center auto;
+}
+
+.box4 {    
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.box-image {
+    margin-top: 30;
+    margin-bottom: 30;
+    margin-left: 30;
+    margin-right: 30;
 }
