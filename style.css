@@ -83,6 +83,10 @@ body {
     margin-right: 30; */
 }
 
+.box-image {    
+    text-align: center;
+}
+
 .dsc {
     color: var(--ffffff, #FFF);
     font-family: Open Sans;
@@ -166,10 +170,6 @@ body {
     justify-content: space-between; /*распределить контент чтоб между ним была пустота*/
 }
 
-/* .main {
-    margin-bottom: 250px; /* нижний отступ */ 
-} */
-
 .section {
     margin-bottom: 250px; /* нижний отступ */ 
 }
@@ -220,4 +220,59 @@ body {
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 4;
+}
+
+.nomargin-botton {
+    margin-bottom: 50px;
+}
+
+.footer_title {
+    color: var(--ffffff, #FFF);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+    margin-bottom: 33px;
+}
+
+.dsc-footer {
+    color: var(--ffffff, #FFF);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+    margin-bottom: 24px;    
+    text-decoration: none;   
+}
+
+.dsc-footer-cursive {
+    color: var(--ffffff, #FFF);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 100;
+    line-height: normal;
+    opacity: 0.6;
+    width: 80%; 
+}
+
+.footer-link{
+    color: var(--ffffff, #FFF);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+    margin-bottom: 24px;    
+    text-decoration: none;  
+}
+    
+.footer-left, .footer-center, .footer-right {
+    width: 30%;
+}
+
+.icon {
+    margin-right: 1rem;
 }
